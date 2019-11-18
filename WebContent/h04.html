@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#btn1").click(function () {
+			$("p").hide("slow");
+		})
+		$("#btn2").click(function() {
+			$("p").show("slow");
+		})
+		$("#btn3").click(function() {
+			$("p").toggle();
+		})
+	})
+</script>
+</head>
+<body>
+	<p>这是p标签</p>
+	<button id="btn1">点击隐藏文字</button>
+	<button id="btn2">点击显示文字</button>
+	<button id="btn3">隐藏和显示的切换</button>
+</body>
+</html>

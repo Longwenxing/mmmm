@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	$.ajax({
+			type:"POST",
+			url:"/web08/AjaxServlet",
+			data:{"username":"siri","password":"siri123"},
+			contentType:'application/x-www-form-urlencoded;charset=utf-8',
+			dataType:"text",
+			success:functon(msg){
+				alert(msg);
+			},
+			error:function(msg){
+				alert(msg);
+			},
+			async:true
+	}
+	);
+	$("#btn1").click(function() {
+		$.get("/web08/Ajax",{
+			"username":$("#ipt1").val(),
+			"password":$("#pwd1").val()
+		},function(){}
+		})	
+	})
+	$.get(){}
+</script>
+
+</head>
+<body>
+	<input type="text" id="ipt1" placeholder="用户名"/>
+	<br>
+	<input type="password" id="pwd1" placeholder="密码"/>
+	<br>
+	<button id="btn1">get</button>
+	<br>
+	<button id="btn2">post</button>
+</body>
+</html>

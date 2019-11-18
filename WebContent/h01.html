@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+		$(function(){
+			$("p").click(function() {
+				$(this).hide();
+			});
+		});
+		$(function() {
+			$("mydiv").click(function() {
+				$(this).hide();
+			});
+		});
+		$(function() {
+			$(".cls").dblcick(function() {
+				$(this).hide();
+			});
+		});
+		$(function () {
+			$("table tr:odd").css("background-color","#ccc");
+			$("table tr:even").css("background-color","lightgreen");
+		});
+</script>
+	
+</head>
+<body>
+	<p>点我一下</p>
+	<p>点我两下</p>
+	<p>点我三下</p>
+	
+	<div id="mydiv">这是div，带有id属性</div>
+	<div>这是div2</div>
+	<div>这是div3</div>
+	
+	<span class="cls">这是span,带有class属性</span>
+	<span class="cls">这是span,带有class属性</span>
+	<span>这是span</span>
+	
+	<table width="400" border="1" cellspacing="0" height="500">
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td></tr>
+	</table>
+</body>
+</html>
